@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="light_black">#C38F8787</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_color">#efeeee</color>
+
+
+    //App Color
+    <color name="app_color">#EF650B</color>
+    <color name="light_app_color">#FFD580</color>
+    <color name="shadow_color">#A7ACC5</color>
+    <color name="shadow_color2">#757C9F</color>
+    <color name="ios_gray">#DCE0E1</color>
+    <color name="silver">#CBCDDB</color>
+    <color name="ios_blue">#0D77EF</color>
+    <color name="grey">#CBBFC1</color>
+
+
+
+
+</resources>

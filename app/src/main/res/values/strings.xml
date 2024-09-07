@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">More Reward</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Number</string>
+    <string name="wallet">Deposit</string>
+    <string name="_0"> 0</string>
+    <string name="earning">Winning</string>
+    <string name="more_spin">More Spin</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="_50">50 ₹</string>
+    <string name="_100">100 ₹</string>
+    <string name="_150">150 ₹</string>
+    <string name="_200">200 ₹</string>
+    <string name="_300">300 ₹</string>
+    <string name="_400">400 ₹</string>
+
+    <string name="pay">5 Spin</string>
+    <string name="available_balance">Available Balance</string>
+
+    <string name="number">Number</string>
+    <string name="coin">Coin</string>
+    <string name="enter_your_number">Enter your number</string>
+    <string name="enter_coin">Enter Amount</string>
+    <string name="close_msg">Do you want to close this app ?</string>
+    <string name="cancel">Cancel</string>
+    <!--spin value-->
+    <string name="case_1">15</string>
+    <string name="case_2">20</string>
+    <string name="case_3">-10</string>
+    <string name="case_4">25</string>
+    <string name="case_5">45</string>
+    <string name="case_6">60</string>
+    <string name="case_7">50</string>
+    <string name="case_8">35</string>
+    <string name="case_9">5</string>
+    <string name="case_10">30</string>
+    <string name="case_11">70</string>
+    <string name="case_12">10</string>
+    <string name="case_13">-25</string>
+    <string name="case_14">55</string>
+    <string name="case_15">40</string>
+    <string name="win_amount">Congrats!! you have won</string>
+    <string name="amount_will_be_added_to_your_account">Coin Will be added to your account</string>
+    <string name="collect">Collect</string>
+    <string name="exit">Exit</string>
+    <string name="enter_you_email">Name</string>
+    <string name="not_yet_registered_login_now">Not yet registered? Login Now</string>
+    <string name="play">Play</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="home">Home</string>
+    <string name="privacy_amp_policy"><![CDATA[Privacy & Policy]]></string>
+    <string name="minimum_withdraw_500">Minimum withdraw ₹ 500</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="winning_amount_in_wallet">Winning Coin in Wallet</string>
+    <string name="buy_spin_for_more_wininng">Buy Spin for more Wininng Coins</string>
+    <string name="_5">5</string>
+    <string name="spin">Spin</string>
+    <string name="_10">10</string>
+    <string name="_15">15</string>
+    <string name="_20">20</string>
+    <string name="_30">30</string>
+    <string name="_40">40</string>
+    <string name="continue_to_buy_means_you_agree_following">Continue to buy means you agree following</string>
+</resources>

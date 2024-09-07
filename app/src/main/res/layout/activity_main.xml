@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/llTopbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+
+            android:background="@color/app_color">
+
+            <ImageView
+                android:id="@+id/menu_btn"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/_12sdp"
+                android:src="@drawable/toggle_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llTopbar"
+            android:background="@drawable/main_bottom"
+            app:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    app:strokeColor="@color/app_color"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_weight="1"
+
+                    android:backgroundTint="@color/app_color"
+                    app:cardCornerRadius="@dimen/_18sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo_semibold"
+                            android:text="@string/wallet"
+                            android:textColor="@color/white"
+                            android:textSize="26sp"
+                          />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/coin"/>
+    <TextView
+        android:id="@+id/tvDeposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_2sdp"
+
+        android:fontFamily="@font/archivo_semibold"
+        android:text="@string/_0"
+        android:textColor="@color/white"
+        android:textSize="23sp" />
+</LinearLayout>
+
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/btnmoreSpin"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/white"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/more_spin"
+                                android:textColor="@color/app_color"
+                                android:textSize="17sp"
+                              android:fontFamily="@font/archivo_semibold" />
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <View
+                    android:layout_width="@dimen/_2sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/white" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/app_color"
+app:strokeColor="@color/app_color"
+                    app:cardCornerRadius="@dimen/_18sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/earning"
+                            android:textColor="@color/white"
+                            android:textSize="26sp"
+                             android:fontFamily="@font/archivo_semibold" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:src="@drawable/coin"/>
+                            <TextView
+                                android:id="@+id/tvEarning"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                 android:text="@string/_0"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/archivo_semibold"
+                                android:textColor="@color/white"
+                                android:textSize="23sp" />
+                        </LinearLayout>
+
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/btnWithdraw"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginHorizontal="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/white"
+                            android:baselineAligned="false"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/withdraw"
+                                android:textColor="@color/app_color"
+                                android:textSize="17sp"
+                             android:fontFamily="@font/archivo_semibold"/>
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rvMsg"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_below="@id/llbox"/>
+        <ImageView
+
+            android:id="@+id/ivWheel"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_240sdp"
+            android:layout_below="@id/rvMsg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/spin_wheel" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ivSpin"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@id/ivWheel"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/app_color"
+            android:fontFamily="@font/archivo_semibold"
+            android:textSize="16sp"
+            android:text="@string/play" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:isScrollContainer="false"
+        android:overScrollMode="never"
+        android:visibility="visible"
+        app:elevation="0dp"
+        app:headerLayout="@layout/menu_header"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/app_color"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/menu_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>
