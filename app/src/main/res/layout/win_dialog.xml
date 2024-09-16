@@ -5,12 +5,25 @@
     android:gravity="center"
     android:layout_gravity="center"
     android:background="@color/white"
+    app:strokeColor="@color/app_color"
+    app:strokeWidth="@dimen/_2sdp"
     android:layout_height="wrap_content">
 <RelativeLayout
     android:layout_width="match_parent"
+    android:layout_marginVertical="@dimen/_20sdp"
     android:layout_height="match_parent">
-
+    <TextView
+        android:id="@+id/tv_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/your_reward_point"
+        android:textColor="@color/app_color"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"/>
     <ImageView
+        android:layout_below="@id/tv_reward"
         android:id="@+id/iv_win"
         android:layout_width="@dimen/_80sdp"
         android:layout_marginTop="@dimen/_5sdp"
@@ -37,7 +50,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="@string/win_amount"
-            android:textColor="@color/black"
+            android:textColor="@color/app_color"
             android:textSize="@dimen/_18sdp"
             android:textStyle="bold"/>
 

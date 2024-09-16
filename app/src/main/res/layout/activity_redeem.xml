@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WithdrawActivity">
+    tools:context=".RedeemActivity">
 
     <RelativeLayout
         android:id="@+id/llTopbar"
@@ -41,9 +41,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/walletcv"
         android:layout_below="@id/llTopbar"
+        android:backgroundTint="@color/app_color"
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_15sdp"
-        android:backgroundTint="@color/grey">
+         >
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -53,24 +54,23 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
                 android:layout_marginLeft="@dimen/_5sdp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/tvCoin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/archivo_semibold"
                     android:text="@string/my_wallet"
-                    android:textColor="@color/black"
+                    android:layout_marginRight="@dimen/_5sdp"
+
+                    android:textColor="@color/white"
                     android:textSize="20sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/archivo_medium"
-                    android:text="@string/winning_amount_in_wallet"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/_10"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="22sp" />
                 </LinearLayout>
 
@@ -90,13 +90,6 @@
 
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:src="@drawable/wallet" />
 
         </RelativeLayout>
 
@@ -105,7 +98,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv"
-        android:layout_width="match_parent"
+        android:visibility="gone"
+         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_15sdp"
@@ -246,7 +240,7 @@ android:inputType="number"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:backgroundTint="@color/app_color"
-                android:text="@string/withdraw"
+                android:text="@string/withdraw2"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"

@@ -15,7 +15,15 @@
             android:icon="@drawable/spin_ic_privacy"
             android:title="@string/privacy_amp_policy" />
 
-
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/sett_terms_conditions"
+            android:title="@string/terms" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/setti_logout"
+            android:title="@string/logout"
+            />
     </group>
 
 

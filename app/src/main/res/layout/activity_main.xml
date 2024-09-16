@@ -50,29 +50,32 @@
 
         </RelativeLayout>
 
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/llbox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/llTopbar"
-            android:background="@drawable/main_bottom"
-            app:cardCornerRadius="0dp">
+             android:layout_below="@id/llTopbar"
+android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+
+             app:cardCornerRadius="20dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-
+android:background="@color/app_color"
                 >
 
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:layout_width="0dp"
-                    app:strokeColor="@color/app_color"
-                    android:layout_height="@dimen/_150sdp"
+                    android:layout_height="@dimen/_130sdp"
                     android:layout_weight="1"
+                    android:background="@color/app_color"
+                    android:id="@+id/ll_dep"
 
-                    android:backgroundTint="@color/app_color"
-                    app:cardCornerRadius="@dimen/_18sdp">
+                    app:cardCornerRadius="@dimen/_18sdp"
+                    app:strokeColor="@color/app_color">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -86,30 +89,29 @@
                             android:fontFamily="@font/archivo_semibold"
                             android:text="@string/wallet"
                             android:textColor="@color/white"
-                            android:textSize="26sp"
-                          />
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:gravity="center">
-    <ImageView
-        android:layout_width="@dimen/_20sdp"
-        android:layout_height="@dimen/_20sdp"
-        android:src="@drawable/coin"/>
-    <TextView
-        android:id="@+id/tvDeposit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-         android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginLeft="@dimen/_2sdp"
+                            android:textSize="26sp" />
 
-        android:fontFamily="@font/archivo_semibold"
-        android:text="@string/_0"
-        android:textColor="@color/white"
-        android:textSize="23sp" />
-</LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+
+                            <TextView
+                                android:id="@+id/tvDeposit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/archivo_semibold"
+
+                                android:gravity="center"
+                                android:text="@string/_0"
+                                android:textColor="@color/white"
+                                android:textSize="23sp" />
+                        </LinearLayout>
 
 
                         <com.google.android.material.card.MaterialCardView
@@ -126,29 +128,30 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
+                                android:fontFamily="@font/archivo_semibold"
                                 android:text="@string/more_spin"
                                 android:textColor="@color/app_color"
-                                android:textSize="17sp"
-                              android:fontFamily="@font/archivo_semibold" />
+                                android:textSize="17sp" />
                         </com.google.android.material.card.MaterialCardView>
 
 
                     </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
 
                 <View
-                    android:layout_width="@dimen/_2sdp"
-                    android:layout_height="@dimen/_45sdp"
+                    android:id="@+id/view"
+                    android:layout_width="@dimen/_3sdp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:background="@color/white" />
 
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/_150sdp"
+                    android:layout_height="@dimen/_130sdp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/app_color"
-app:strokeColor="@color/app_color"
-                    app:cardCornerRadius="@dimen/_18sdp">
+                    app:cardCornerRadius="@dimen/_18sdp"
+                    app:strokeColor="@color/app_color">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -159,27 +162,32 @@ app:strokeColor="@color/app_color"
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo_semibold"
                             android:text="@string/earning"
                             android:textColor="@color/white"
-                            android:textSize="26sp"
-                             android:fontFamily="@font/archivo_semibold" />
+                            android:textSize="26sp" />
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center">
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
                             <ImageView
+                                android:id="@+id/ivcoin"
+                                android:visibility="gone"
                                 android:layout_width="@dimen/_20sdp"
                                 android:layout_height="@dimen/_20sdp"
-                                android:src="@drawable/coin"/>
+                                android:src="@drawable/coin" />
+
                             <TextView
                                 android:id="@+id/tvEarning"
 
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                 android:text="@string/_0"
                                 android:layout_marginLeft="@dimen/_2sdp"
                                 android:fontFamily="@font/archivo_semibold"
+                                android:text="@string/_0"
                                 android:textColor="@color/white"
                                 android:textSize="23sp" />
                         </LinearLayout>
@@ -197,13 +205,14 @@ app:strokeColor="@color/app_color"
                             android:gravity="center">
 
                             <TextView
+                                android:id="@+id/tvWallet"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
+                                android:fontFamily="@font/archivo_semibold"
                                 android:text="@string/withdraw"
                                 android:textColor="@color/app_color"
-                                android:textSize="17sp"
-                             android:fontFamily="@font/archivo_semibold"/>
+                                android:textSize="17sp" />
                         </com.google.android.material.card.MaterialCardView>
 
 
@@ -213,33 +222,252 @@ app:strokeColor="@color/app_color"
 
             </LinearLayout>
 
-        </LinearLayout>
-<androidx.recyclerview.widget.RecyclerView
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llbox"
+            android:layout_marginTop="@dimen/_10sdp" />
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/rvMsg"
-    android:layout_marginTop="@dimen/_10sdp"
-    android:layout_below="@id/llbox"/>
-        <ImageView
+    android:layout_below="@id/rvMsg"
+    android:id="@+id/rv"
+>
+    <ImageView
 
-            android:id="@+id/ivWheel"
-            android:layout_width="@dimen/_240sdp"
-            android:layout_height="@dimen/_240sdp"
-            android:layout_below="@id/rvMsg"
-            android:layout_centerHorizontal="true"
+        android:id="@+id/ivWheel"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_240sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/spin_wheel" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivSpin"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@id/ivWheel"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/app_color"
+        android:fontFamily="@font/archivo_semibold"
+        android:text="@string/play"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llbox"
             android:layout_marginTop="@dimen/_15sdp"
-            android:src="@drawable/spin_wheel" />
+            android:visibility="gone"
+            >
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/ivSpin"
-            android:layout_width="@dimen/_140sdp"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_below="@id/ivWheel"
-            android:layout_centerHorizontal="true"
-            android:backgroundTint="@color/app_color"
-            android:fontFamily="@font/archivo_semibold"
-            android:textSize="16sp"
-            android:text="@string/play" />
+            <TextView
+                android:id="@+id/textOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/min_deposit"
+                android:textColor="@color/app_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/deposit_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textOne"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/ic_wallet_box1"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/deposit_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_rupee"
+                    android:drawableTint="@color/app_color"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/archivo_medium"
+                    android:hint="@string/enter_amount"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_18sdp"
+                    android:paddingEnd="@dimen/_1sdp"
+                    android:textColor="@color/app_color"
+                    android:textColorHint="@color/app_color"
+                    android:textSize="@dimen/_13sdp"
+                    android:value="0" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/first_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deposit_text_input"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/first_deposit_option"
+                android:textColor="@color/app_color"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/second_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/first_discount"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/second_deposit_option"
+                android:textColor="@color/app_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/third_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/second_discount"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/third_deposit_option"
+                android:textColor="@color/app_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/fourth_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/third_discount"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/fourth_deposit_option"
+                android:textColor="@color/app_color"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/pay_options_layout"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fourth_discount"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:id="@+id/first_deposit"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="40dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/black_border"
+                    android:gravity="center"
+                    android:text="@string/first_deposit"
+
+                    android:textColor="@color/app_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/second_deposit"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_box_bg"
+                    android:gravity="center"
+                    android:text="@string/second_deposit"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/third_deposit"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/black_border"
+                    android:gravity="center"
+                    android:text="@string/third_deposit"
+                    android:textColor="@color/app_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/fourth_deposit"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/first_deposit"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/black_border"
+                    android:gravity="center"
+                    android:text="@string/fourth_deposit"
+                    android:textColor="@color/app_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/fifth_deposit"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/second_deposit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/black_border"
+                    android:gravity="center"
+                    android:text="@string/fifth_deposit"
+                    android:textColor="@color/app_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/sixth_deposit"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/third_deposit"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/black_border"
+                    android:gravity="center"
+                    android:text="@string/sixth_deposit"
+                    android:textColor="@color/app_color"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/pay_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/pay_options_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/ic_box_bg"
+                android:fontFamily="@font/archivo_semibold"
+                android:gravity="center"
+                android:text="Add Money"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
 
     </RelativeLayout>
 

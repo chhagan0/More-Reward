@@ -1,29 +1,13 @@
 <resources>
-    <string name="app_name">More Reward</string>
-    <string name="login">Login</string>
-    <string name="email">Email</string>
-    <string name="password">Number</string>
+    <string name="app_name">Pocket Rush</string>
     <string name="wallet">Deposit</string>
     <string name="_0"> 0</string>
     <string name="earning">Winning</string>
     <string name="more_spin">More Spin</string>
-    <string name="withdraw">Withdraw</string>
-    <string name="_50">50 ₹</string>
-    <string name="_100">100 ₹</string>
-    <string name="_150">150 ₹</string>
-    <string name="_200">200 ₹</string>
-    <string name="_300">300 ₹</string>
-    <string name="_400">400 ₹</string>
+    <string name="withdraw">Wallet</string>
 
-    <string name="pay">5 Spin</string>
-    <string name="available_balance">Available Balance</string>
-
-    <string name="number">Number</string>
-    <string name="coin">Coin</string>
     <string name="enter_your_number">Enter your number</string>
     <string name="enter_coin">Enter Amount</string>
-    <string name="close_msg">Do you want to close this app ?</string>
-    <string name="cancel">Cancel</string>
     <!--spin value-->
     <string name="case_1">15</string>
     <string name="case_2">20</string>
@@ -41,11 +25,8 @@
     <string name="case_14">55</string>
     <string name="case_15">40</string>
     <string name="win_amount">Congrats!! you have won</string>
-    <string name="amount_will_be_added_to_your_account">Coin Will be added to your account</string>
-    <string name="collect">Collect</string>
-    <string name="exit">Exit</string>
-    <string name="enter_you_email">Name</string>
-    <string name="not_yet_registered_login_now">Not yet registered? Login Now</string>
+    <string name="amount_will_be_added_to_your_account">Amount Will be added to your Winnings</string>
+    <string name="collect">Spin More</string>
     <string name="play">Play</string>
 
     <string name="nav_open">Open</string>
@@ -53,15 +34,30 @@
     <string name="home">Home</string>
     <string name="privacy_amp_policy"><![CDATA[Privacy & Policy]]></string>
     <string name="minimum_withdraw_500">Minimum withdraw ₹ 500</string>
-    <string name="my_wallet">My Wallet</string>
-    <string name="winning_amount_in_wallet">Winning Coin in Wallet</string>
-    <string name="buy_spin_for_more_wininng">Buy Spin for more Wininng Coins</string>
-    <string name="_5">5</string>
-    <string name="spin">Spin</string>
+    <string name="my_wallet">Coin</string>
     <string name="_10">10</string>
-    <string name="_15">15</string>
-    <string name="_20">20</string>
-    <string name="_30">30</string>
-    <string name="_40">40</string>
-    <string name="continue_to_buy_means_you_agree_following">Continue to buy means you agree following</string>
+    <string name="min_deposit">Minimum deposit limit is</string>
+    <string name="enter_amount">Enter amount</string>
+
+    <string name="first_deposit">52</string>
+    <string name="second_deposit">80</string>
+    <string name="third_deposit">130</string>
+    <string name="fourth_deposit">170</string>
+    <string name="fifth_deposit">220</string>
+    <string name="sixth_deposit">320</string>
+
+    <string name="first_deposit_option">Get ₹10 on ₹100 or above payments</string>
+    <string name="second_deposit_option">Get ₹30 on ₹150 or above payments</string>
+    <string name="third_deposit_option">Get ₹60 on ₹200 or above payments</string>
+    <string name="fourth_deposit_option">Get ₹100 on ₹250 or above payments</string>
+    <string name="terms"><![CDATA[Terms&Condition]]></string>
+    <string name="are_you_sure_close_this_app">Are You Sure close this app?</string>
+    <string name="your_reward_point">Your Reward Point</string>
+    <string name="withdraw2">Withdraw</string>
+    <string name="default_web_client_id">988226728801-no5h72j7vu7mo0imlm812vvsd8g9720s.apps.googleusercontent.com</string>
+    <string name="log_in_with_google">Log In with Google</string>
+    <string name="logout">Exit app</string>
+    <string name="by_signin_to_the_app_you_agree_to_the_our">By signin to the app you agree to the our</string>
+    <string name="and">And</string>
+    <string name="welcome_to_pocket_rush">Welcome to Pocket Rush</string>
 </resources>
