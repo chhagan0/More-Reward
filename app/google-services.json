@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "988226728801",
+    "project_id": "pocket-rush-52dcf",
+    "storage_bucket": "pocket-rush-52dcf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988226728801:android:af30ce2cc530f62fe60b20",
+        "android_client_info": {
+          "package_name": "com.pocket.rush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988226728801-5po8c8l8jt6sdhm7k0fvfkgqubm7248u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pocket.rush",
+            "certificate_hash": "c691100c51e00d26da9e919f319bb0eb697aed32"
+          }
+        },
+        {
+          "client_id": "988226728801-no5h72j7vu7mo0imlm812vvsd8g9720s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUFlw9mSNQM6CVmHqU33yzimfZ3cTB3sg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988226728801-no5h72j7vu7mo0imlm812vvsd8g9720s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
